@@ -20,6 +20,9 @@ function Soil() {
   return (
     <div className="container">
       <div className="row">
+      <div>
+      <a class="btn btn-primary mt-5" style={{ float: "right" }} href="MalaSoil" >Malayalam</a>
+      </div>
       <p class="h1 text-center mt-5">Soil Care Tips</p>
         <div className="col-md-6 col-lg-4 mb-4 mt-5">
           <div className="card h-100 mt-5">

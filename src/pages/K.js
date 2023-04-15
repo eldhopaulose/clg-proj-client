@@ -1,7 +1,6 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react'
 
-function Ph() {
+function K() {
   const PotassiumLink = "https://blog.agchemigroup.eu/uses-for-koh-in-farming-the-chemical-industry-and-food-processing/";
   const limeLink = "https://en.wikipedia.org/wiki/Agricultural_lime";
   const SodiumLink =
@@ -17,21 +16,20 @@ function Ph() {
     window.open(link, "_blank");
   };
 
+
   return (
     <div className="container">
       <div className="row">
-      <div>
-      <a class="btn btn-primary mt-5" style={{ float: "right" }} href="MalapH" >Malayalam</a>
-      </div>
-        <p class="h1 text-center mt-5">Deficiency of pH </p>
+        <div>
+          <a class="btn btn-primary mt-5" style={{ float: "right" }} href="MalaK" >Malayalam</a>
+        </div>
+        <p class="h1 text-center mt-5">Deficiency of K </p>
         <div className="col-md-6 col-lg-4 mb-4 mt-3">
           <div className="card h-100 mt-5">
             <div className="card-body">
-              <h4 className="card-title">Lime</h4>
+              <h4 className="card-title">Optimize fertilizer application</h4>
               <p className="card-text">
-                This is a commonly used pH increaser that is made from calcium
-                carbonate. It can help to raise the pH level and also provide
-                calcium to the plants.
+                Farmers should apply fertilizers at the right time and in the right amounts to optimize crop growth while minimizing potassium loss through runoff or leaching. Split application can also be used to improve potassium use efficiency.
               </p>
               <div className="text-center">
                 <button
@@ -47,10 +45,9 @@ function Ph() {
         <div className="col-md-6 col-lg-4 mb-4 mt-3">
           <div className="card h-100 mt-5">
             <div className="card-body">
-              <h4 className="card-title">Potassium hydroxide</h4>
+              <h4 className="card-title">Use potassium-efficient crops</h4>
               <p className="card-text">
-                This is a strong alkaline solution that can quickly raise the pH
-                level in a cultivation system.
+                Farmers can choose potassium-efficient crops or varieties that require less potassium fertilizer to produce high yields.
               </p>
               <div className="text-center">
                 <button
@@ -66,10 +63,9 @@ function Ph() {
         <div className="col-md-6 col-lg-4 mb-4 mt-3">
           <div className="card h-100 mt-5">
             <div className="card-body">
-              <h4 className="card-title">Sodium bicarbonate</h4>
+              <h4 className="card-title">Crop rotation</h4>
               <p className="card-text">
-                This is a more mild pH increaser that can be used to slowly
-                raise the pH level over time.
+                Rotating crops can help reduce the buildup of pests and diseases, improve soil health and fertility, and reduce the need for potassium fertilizer
               </p>
               <div className="text-center">
                 <button
@@ -84,16 +80,14 @@ function Ph() {
         </div>
 
         <p class="h1 text-center mt-5">
-        High pH
+          High K
         </p>
         <div className="col-md-6 col-lg-4 mb-4 mt-3">
           <div className="card h-100 mt-5">
             <div className="card-body">
-              <h4 className="card-title">Sulfuric acid</h4>
+              <h4 className="card-title">Adjust fertilizer application</h4>
               <p className="card-text">
-                This is a strong acid that can effectively lower the pH level in
-                a cultivation system. However, it must be used with caution, as
-                it can be dangerous if not handled properly.
+                Farmers should adjust their fertilizer application rates based on the nutrient requirements of their crops and the nutrient levels in their soil. High potassium levels in the soil may indicate that less potassium fertilizer is needed.
               </p>
               <div className="text-center">
                 <button
@@ -109,11 +103,9 @@ function Ph() {
         <div className="col-md-6 col-lg-4 mb-4 mt-3">
           <div className="card h-100 mt-5">
             <div className="card-body">
-              <h4 className="card-title">Phosphoric acid</h4>
+              <h4 className="card-title">Use fertilizers with balanced nutrients</h4>
               <p className="card-text">
-                This is a milder acid that can also be used to lower the pH
-                level. It's often used in hydroponic systems, as it can also
-                provide phosphorus to the plants.
+                Farmers can use fertilizers that provide a balanced mix of nutrients to avoid overloading the soil with excess potassium.
               </p>
               <div className="text-center">
                 <button
@@ -129,10 +121,9 @@ function Ph() {
         <div className="col-md-6 col-lg-4 mb-4 mt-3">
           <div className="card h-100 mt-5">
             <div className="card-body">
-              <h4 className="card-title">Vinegar</h4>
+              <h4 className="card-title">Use potassium antagonists</h4>
               <p className="card-text">
-                This is a more natural and mild acid that can be used to lower
-                the pH level in smaller cultivation systems.
+                Certain elements, such as calcium and magnesium, can help reduce the negative effects of high potassium levels in the soil. Farmers can use fertilizers that contain these elements or add them separately to their soil to balance out excess potassium.
               </p>
               <div className="text-center">
                 <button
@@ -147,7 +138,7 @@ function Ph() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Ph;
+export default K
