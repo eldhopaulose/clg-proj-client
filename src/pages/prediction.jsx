@@ -10,16 +10,6 @@ function Prediction() {
     });
   }, []);
 
-  const getRainStatusColor = (rainStatus) => {
-    if (rainStatus === 'Raining') {
-      return 'text-danger';
-    } else if (rainStatus === 'Not Raining') {
-      return 'text-success';
-    } else {
-      return '';
-    }
-  }
-
   return (
     <div className="container mt-4">
       <h1 className="text-center mb-4">Prediction</h1>
@@ -27,16 +17,19 @@ function Prediction() {
         <thead>
           <tr>
             <th className="text-center">Date</th>
-            <th className="text-center">Rainfall</th>
-            <th className="text-center">Rain Status</th>
+            <th className="text-center">Rain Intensity</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item) => (
             <tr key={item.Date}>
               <td className="text-center">{item.Date}</td>
-              <td className="text-center">{item['Rainfall Amount']}mm</td>
-              <td className={`text-center ${getRainStatusColor(item['Rain Status'])}`}>{item['Rain Status']}</td>
+              <td className={`text-center ${item['Rain Intensity'] ? 
+                (item['Rain Intensity'] === 'High' ? 'text-danger' : 
+                (item['Rain Intensity'] === 'Moderate' ? 'text-warning' : 
+                (item['Rain Intensity'] === 'Light' ? 'text-info' : ''))) : 'text-success'}`}>
+                {item['Rain Intensity'] ? item['Rain Intensity'] : 'not raining'}
+              </td>
             </tr>
           ))}
         </tbody>
